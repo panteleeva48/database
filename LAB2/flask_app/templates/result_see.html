@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<title>Расписание занятий</title>
+    </head>
+	<body>
+		<h1>Расписание</h1>
+		{% for answer in student %}
+		---<br>
+		<b>Предмет: </b>{{ answer[4] }}<br>
+		<b>Преподаватель: </b>{{ answer[1] }}<br>
+		<b>Место: </b>{{ answer[2] }}<br>
+		<b>Адрес: </b>{{ answer[3] }}, {{ answer[2] }}<br>
+		<b>Время: </b>{{ answer[0] }}<br>
+		{% endfor %}
+		<form action="/">
+			<p><input type="submit" value="Назад"></p>
+		</form>
+	</body>
+</html>
