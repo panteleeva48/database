@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<title>Расписание занятий</title>
+    </head>
+	<body>
+		<h1>Введите старые и новые данные</h1>
+		<form action="/update_data_res" method="POST">
+    		<p>Почта студента: <input name="email" value="impanteleyeva@gmail.com">--><input name="Nemail" value="impanteleyeva@gmail.com"></p>
+    		<p>Предмет: <input name="class_name" value="Программирование">--><input name="Nclass_name" value="Базы данных"></p>
+    		<p>Начало: <input name="time" value="2018-11-19 14:10:00">--><input name="Ntime" value="2018-11-19 14:10:00"></p>
+    		<p>Преподаватель: <input name="teacher" value="Иванов Илья Иванович">--><input name="Nteacher" value="Иванов Илья Иванович"></p>
+    		<p>Аудитория: <input name="classroom" value="504">--><input name="Nclassroom" value="504"></p>
+    		<p>Корпус: <input name="building" value="Старая Басманная ул., д. 21/4">--><input name="Nbuilding" value="Старая Басманная ул., д. 21/4"></p>    		
+    		<input type="submit">
+		</form>
+		<form action="/">
+			<p><input type="submit" value="Назад"></p>
+		</form>
+	</body>
+</html>
